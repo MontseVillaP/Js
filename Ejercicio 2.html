@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href= "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b103e2a4f.js" crossorigin="anonymous"></script>
+    <title>Ejercicio 2</title>
+</head>
+
+<body background="original (1).gif">
+     <nav class="navbar navbar-expand-lg bg-yellow">
+  		<div class="container">
+    <a class="navbar-brand" href="index.html">JAVASCRIPT</a>
+    <button class= "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="icon ion-md-menu"></i>
+    </button>
+            
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="Ejercicio%201.html">Ejercicio 1</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="Ejercicio%202.html">Ejercicio 2</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="Ejercicio%203.html">Ejercicio 3</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="Ejercicio%204.html">Ejercicio 4</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-gold" href="Ejercicio%205.html">Ejercicio 5</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+	</nav>
+
+     <section>
+        <center>
+        <div class="card" style="width: 26rem; margin-top: 1.5rem;">
+            <div class="card-body">
+        <h4 class="card-title text-center">Funciones y eventos</h4>
+        <p>Calculadora:</p>
+        <form> 
+            <input type="Text " name="Número1" id="Número1" style="width : 50px; heigth : 1px"> 
+            <input type="Text" name="Número2" id="Número2" style="width : 50px; heigth : 1px"><br><br>
+            <input type="button" value="Sumar" onclick="suma()"><br>
+            <input type="button" value="Restar" onclick="Resta()"><br>
+            <input type="button" value="Multiplicar" onclick="Multiplicacion()"><br>
+            <input type="button" value="Dividir" onclick="Division()"><br>
+            <input type= "reset" value="Borrar">
+        </form>
+        <script>
+            function suma(){
+                resultado = parseInt(Número1.value) + parseInt(Número2.value);
+                alert("El resultado de la suma es: "+resultado);
+            }
+            function Resta(){
+                resultado = parseInt(Número1.value) - parseInt(Número2.value);
+                alert("El resultado de la resta es: "+resultado);
+            }
+            function Multiplicacion(){
+                resultado = parseInt(Número1.value) * parseInt(Número2.value);
+                alert("El resultado de la multiplicación es: "+resultado);
+            }
+            function Division(){
+                resultado = parseInt(Número1.value) / parseInt(Número2.value);
+                alert("El resultado de la división es: "+resultado);
+            }
+        </script>
+    </div>
+    </div>
+        
+        </center>
+    </section>
+</body>
+
+</html>

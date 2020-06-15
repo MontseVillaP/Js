@@ -1,0 +1,32 @@
+:root{
+    --yellow:#F0DE5B;
+    --white:#ffffff;
+    --green: #AAF05B;
+}
+body {
+background: ;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: cover;
+
+
+}
+a{
+	color: var(--light);
+}
+
+a:hover{
+	color: var(--light);
+	text-decoration: none;
+}
+.bg-yellow{
+	background-color: var(--yellow) !important;
+}
+
+.bg-light{
+	background-color: var(--white) !important;
+}
+.bg-green{
+	background-color: var(--green);
+}
